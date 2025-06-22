@@ -21,7 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Por ahora solo mostramos un mensaje
         alert(`Gracias por calificar a ${docente.nombre} con un ${calificacion}.`);
-        window.location.href = "materias.html";
+        // Redirigir correctamente según entorno
+        const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+        const redirectUrl = isLocalhost
+        ? "materias.html"
+        : "/MisProfesAppFront/materias.html"; // reemplazá si tu repo se llama distinto
+
+        window.location.href = redirectUrl;
 
       });
     })
