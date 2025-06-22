@@ -7,11 +7,14 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
     //Harcoding
     user = localStorage.getItem('usuario') ? JSON.parse(localStorage.getItem('usuario')) : null;
-    console.log(user);
 
-    if (user.email == email && user.password == password ) {
-        window.location.href = 'materias.html';
-        } else {
+    if (user == null) {
         alert('Usuario o contraseña incorrectos');
+    } else {
+        if (user.email == email && user.password == password ) {
+            window.location.href = 'materias.html';
+        } else {
+            alert('Usuario o contraseña incorrectos');
         }
-    });
+    }
+});
