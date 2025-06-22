@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opinar - MisProfes</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/opinar.css" />
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <main class="opinar-container">
+    <h2 id="nombre-materia">Materia</h2>
+    <h3 id="nombre-docente">Docente</h3>
+
+    <form id="opinionForm">
+      <label for="calificacion">Calificación (1 a 5):</label>
+      <select id="calificacion" required>
+        <option value="">Seleccionar</option>
+        <option value="1">1 - Muy malo</option>
+        <option value="2">2 - Malo</option>
+        <option value="3">3 - Regular</option>
+        <option value="4">4 - Bueno</option>
+        <option value="5">5 - Excelente</option>
+      </select>
+
+      <label for="comentario">Comentario (opcional):</label>
+      <textarea id="comentario" rows="4" placeholder="Contanos tu experiencia..."></textarea>
+
+      <button type="submit">Enviar calificación</button>
+    </form>
+
+    <p id="mensaje-enviado" class="mensaje"></p>
+  </main>
+
+  <script src="js/cargarHeader.js"></script>
+  <script src="js/opinar.js"></script>
+</body>
+</html>

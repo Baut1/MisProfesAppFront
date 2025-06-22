@@ -27,10 +27,6 @@ body {
   max-width: 400px;
 }
 
-.logo {
-  color: #3b82f6;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -61,6 +57,7 @@ button:hover {
 
 .mensaje {
   margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 0.9rem;
   color: red;
 }
