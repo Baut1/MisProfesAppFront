@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Por ahora solo mostramos un mensaje
         alert(`Gracias por calificar a ${docente.nombre} con un ${calificacion}.`);
-        window.location.href = "/materias.html";
+        window.location.href = "materias.html";
 
       });
     })
