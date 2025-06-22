@@ -1,22 +1,15 @@
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Here we obtain the user info values
+    // obtain the user info values
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Gather the user info from the local storage
-    //const users = JSON.parse(localStorage.getItem('users')) || [];
-    //const user = users.find(user => user.mail === username && user.password === password);
-
-    //Harcoding the user info
-    user = {
-        email : 'usertest@gmail.com',
-        password : '123456'
-    }
+    //Harcoding
+    user = localStorage.getItem('usuario') ? JSON.parse(localStorage.getItem('usuario')) : null;
+    console.log(user);
 
     if (user.email == email && user.password == password ) {
-        // This is for redirect the user to other page, could be the user profile.
         window.location.href = 'materias.html';
         } else {
         alert('Usuario o contraseña incorrectos');

@@ -12,7 +12,7 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
     return;
   }
 
-  if (!email.endsWith("@tu-facultad.edu.ar")) {
+  if (!email.endsWith("@bue.edu.ar")) {
     mensaje.textContent = "Usá tu correo institucional.";
     return;
   }
@@ -29,12 +29,12 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
 
   // Simular guardado
   const usuario = { nombre, email, password };
-  console.log("Usuario registrado:", usuario);
+  localStorage.setItem("usuario", JSON.stringify(usuario));
   mensaje.style.color = "green";
   mensaje.textContent = "¡Registro exitoso! Redirigiendo...";
 
   // Redireccionar luego de 2 segundos
   setTimeout(() => {
-    window.location.href = "index.html"; // cambiar si hay otra página
-  }, 2000);
+    window.location.href = "login.html"; // cambiar si hay otra página
+  }, 5000);
 });
