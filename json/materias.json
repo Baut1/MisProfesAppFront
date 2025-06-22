@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nombre": "Programación 1",
+    "docentes": [
+      {
+        "nombre": "Laura Martínez",
+        "cantidadCalificaciones": 12,
+        "promedio": 4.1
+      },
+      {
+        "nombre": "Carlos Gómez",
+        "cantidadCalificaciones": 11,
+        "promedio": 4.5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Diseño de Bases de Datos",
+    "docentes": [
+      {
+        "nombre": "Valeria Ruiz",
+        "cantidadCalificaciones": 7,
+        "promedio": 4.8
+      },
+      {
+        "nombre": "Andrés Navarro",
+        "cantidadCalificaciones": 5,
+        "promedio": 4.6
+      },
+      {
+        "nombre": "Pablo Fontán",
+        "cantidadCalificaciones": 5,
+        "promedio": 4.7
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Redes de Datos",
+    "docentes": [
+      {
+        "nombre": "Lucía Aguirre",
+        "cantidadCalificaciones": 10,
+        "promedio": 3.9
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Sistemas Operativos",
+    "docentes": [
+      {
+        "nombre": "Julián Ibáñez",
+        "cantidadCalificaciones": 4,
+        "promedio": 4.2
+      },
+      {
+        "nombre": "Claudia Díaz",
+        "cantidadCalificaciones": 4,
+        "promedio": 3.8
+      }
+    ]
+  }
+]

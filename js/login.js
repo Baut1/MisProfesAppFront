@@ -16,9 +16,8 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     }
 
     if (user.email == email && user.password == password ) {
-        alert('Inicio de sesión exitoso');
         // This is for redirect the user to other page, could be the user profile.
-        window.location.href = 'dashboard.html';
+        window.location.href = 'materias.html';
         } else {
         alert('Usuario o contraseña incorrectos');
         }

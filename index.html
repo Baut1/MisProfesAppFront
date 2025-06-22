@@ -5,21 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MisProfes - Inicio</title>
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1 class="logo">MisProfes</h1>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="#">Materias</a></li>
-        <li><a href="#">Encuestas</a></li>
-        <li>
-          <input type="text" id="buscador" placeholder="Buscar..." />
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header-container"></div>
 
   <main class="landing">
     <h2>Opiná con confianza, evaluá con responsabilidad</h2>
@@ -29,6 +18,7 @@
     <a href="login.html" class="btn-comenzar">Comenzar</a>
   </main>
 
+  <script src="js/cargarHeader.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
